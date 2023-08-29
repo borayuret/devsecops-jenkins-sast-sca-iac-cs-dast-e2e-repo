@@ -43,7 +43,7 @@ pipeline {
     }
     stage('RunDASTUsingZAP') {
       steps {
-        bat("C:\\zap\\ZAP_2.13.0\\zap.sh -port 9393 -cmd -quickurl https://www.example.com -quickprogress -quickout C:\\zap\\ZAP_2.13.0\\Output.html")
+        bat("C:\\devsecops_workspace\\ZAP_2.13.0\\zap.sh -port 9393 -cmd -quickurl https://www.example.com -quickprogress -quickout C:\\devsecops_workspace\\ZAP_2.13.0\\Output.html")
       }
     }
 
